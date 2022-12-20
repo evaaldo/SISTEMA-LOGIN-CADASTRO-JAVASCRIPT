@@ -9,12 +9,6 @@ export const InputPersonalizado = styled.input`
     margin-bottom: 1em;
     font-size: 1.1em;
 
-        input::placeholder {
-            color: var(--preto);
-            font-weight: 600;
-            padding-left: .5em;
-        }
-
 `
 
 

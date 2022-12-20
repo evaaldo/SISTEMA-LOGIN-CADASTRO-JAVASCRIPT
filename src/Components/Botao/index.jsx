@@ -1,9 +1,20 @@
 import { BotaoPersonalizado } from "./style"
 
-const Botao = () => {
+const Botao = ({
+    type,
+    text,
+    onClick,
+    //disabled
+}) => {
 
     return(
-        <BotaoPersonalizado>Sign in</BotaoPersonalizado>
+        <BotaoPersonalizado
+            type={type}
+            text={text}
+            onClick={onClick}
+        >
+            {text}
+        </BotaoPersonalizado>
     )
 
 }

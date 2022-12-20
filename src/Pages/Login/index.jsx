@@ -4,6 +4,14 @@ import { Container, Form } from "./styles"
 
 const Login = () => {
 
+    const handleChange = (event) => {
+        console.log(event.target.value)
+    }
+
+    const handleSubmit = async () => {
+        alert('login')
+    }
+
     return(
         <Container>
             <Form>
@@ -12,17 +20,22 @@ const Login = () => {
                 <InputPersonalizado
                     name='email'
                     placeholder='Type your user'
-                    //onChange={handleChange}
+                    onChange={handleChange}
                     type='email'
                 />
                 <p>Password</p>
                 <InputPersonalizado
                     name='password'
                     placeholder='Type your password'
-                    //onChange={handleChange}
+                    onChange={handleChange}
                     type='password'
                 />
-                <Botao/>
+                <Botao
+                    text='Sign in'
+                    type="submit"
+                    onClick={handleSubmit}
+                    //disabled
+                />
             </Form>
         </Container>
     )
