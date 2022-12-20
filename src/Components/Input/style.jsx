@@ -9,10 +9,11 @@ export const InputPersonalizado = styled.input`
     background-color: var(--cinza);
     color: var(--preto);
     font-size: 1.05em;
+    margin-top: 1em;
 
-    input::placeholder {
-        color: var(--preto);
-    }
+        input::placeholder {
+            color: var(--preto);    
+        }
 
 `
 
