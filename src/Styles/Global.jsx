@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
         --preto: #000;
         --azul-bebe: #ADA2FF;
         --preto-fundo: #202020;
-        --cinza: #F8EDE3;
+        --cinza: #B2B2B2;
         --azul: #4B56D2;
         --azul-escuro: #263159;
     }
@@ -23,11 +23,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         width: 100vw;
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Roboto', sans-serif;
-        background-color: var(--azul-bebe);
+        font-family: 'Poppins', sans-serif;
     }
 
 `
