@@ -9,6 +9,9 @@ const GlobalStyle = createGlobalStyle`
         --preto: #000;
         --azul-bebe: #ADA2FF;
         --preto-fundo: #202020;
+        --cinza: #F8EDE3;
+        --azul: #4B56D2;
+        --azul-escuro: #263159;
     }
 
     * {

@@ -1,13 +1,16 @@
-import { Container } from "./styles"
-
+import { InputPersonalizado } from "../../Components/Input/style"
+import { ContainerLogin } from "./styles"
 
 const Login = () => {
 
     return(
         <div className="login">
-            <Container>
-                <h1>Login</h1>
-            </Container>
+            <ContainerLogin>
+                <h1>Faça seu login</h1>
+                <InputPersonalizado/>
+                <p>Ainda não tem uma conta?</p>
+                <a href="/">Cadastre-se</a>
+            </ContainerLogin>
         </div>
     )
 
