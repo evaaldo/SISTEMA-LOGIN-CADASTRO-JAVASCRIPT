@@ -4,7 +4,7 @@ const Botao = ({
     type,
     text,
     onClick,
-    //disabled
+    disabled
 }) => {
 
     return(
@@ -12,6 +12,7 @@ const Botao = ({
             type={type}
             text={text}
             onClick={onClick}
+            disabled={disabled}
         >
             {text}
         </BotaoPersonalizado>

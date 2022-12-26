@@ -32,7 +32,7 @@ const Login = () => {
         return validarEmail(form.email) && validarSenha(form.password)
     }
 
-    console.log('form está válido?', validadorInput)
+    console.log('form está válido?', validadorInput())
 
     return(
         <Container>
@@ -56,7 +56,7 @@ const Login = () => {
                     text='Sign in'
                     type="submit"
                     onClick={handleSubmit}
-                    //disabled
+                    disabled={loading === true || !validadorInput()}
                 />
             </Form>
         </Container>

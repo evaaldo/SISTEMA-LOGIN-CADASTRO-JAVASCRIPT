@@ -15,5 +15,16 @@ export const BotaoPersonalizado = styled.button`
     font-size: 1em;
     width: 100%;
 
+    ${props => props.disabled === false &&`
+        &:hover {
+            background-color: var(--branco);
+            color: var(--preto);
+        }
+    `}
+
+${props => props.disabled &&`
+        opacity: 0.7;
+    `}
+
 `
 
